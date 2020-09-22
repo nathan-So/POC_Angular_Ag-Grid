@@ -1,0 +1,9 @@
+<app-search-bar-cap (searchChanged)="handleChange($event)"></app-search-bar-cap>
+
+<!-- si URL alors ajouter | async à filteredList -->
+<ag-grid-angular 
+    style="width: 600px; height: 350px; margin-left: auto; margin-right: auto; text-align: center;"
+    class="ag-theme-alpine"
+    [rowData]="filteredList"
+    [columnDefs]="columnDefs">
+    </ag-grid-angular>
